@@ -1,0 +1,125 @@
+Variables:
+    Variables are used to store the data.
+
+JavaScript Variables:
+---------------------
+    - we can declare the variable in javascript by using "var" keyword.
+    - by using javascript variables we can store all categories of data.
+    - we can display the data on browser console by using console.log( - ).
+    - we can display the data on web page by using document.write( - )
+
+
+Ex_1:
+<script>
+    var sub_one = "Angular5";
+    var sub_two = "NodeJS";
+    var sub_three = "MongoDB";
+    console.log(sub_one+"<==>"+sub_two+"<==>"+sub_three);
+    document.write("<h1 style='color:red'>"+sub_one+"<==>"+sub_two+"<==>"+sub_three+"</h1>");
+</script>
+
+
+Ex_2:
+    <h1 id="first_h1"></h1>
+    <h1 id="second_h1"></h1>
+    <h1 id="third_h1"></h1>
+    <script>
+        document.getElementById("first_h1").innerHTML = "Angular5";
+        document.getElementById("second_h1").innerHTML = "NodeJS";
+        document.getElementById("third_h1").innerHTML = "MongoDB";
+    </script>
+
+
+
+Ex_3:
+-----
+<script>
+    //global variable
+    //var data = 100;
+    let data = 100;
+
+    if(true){
+        //local variable
+        //var data = 200;
+        let data = 200;
+    }
+
+    document.write(data);
+
+</script>
+
+[Note : if local changes effecting the global members, then issue called as
+        global polluting issue]
+
+[Note : we can overcome the global polluting issue by using "let" keyword introduced
+        in ECMA5 standards]
+
+TypeScript:
+-----------
+    - TypeScript is the programming language introduced by microsoft.
+
+    - TypeScript is used to develop the Angular5 Applications.
+
+    - converting the TypeScript Code to Equalent JavaScript Called as
+      transpilation.
+
+    - "tsc" is the compiler used to perform the transpilation.
+
+TypeScript Compiler Installation:
+---------------------------------
+> npm install -g tsc.   (Alt+F12)
+
+Compilation of TypeScript Code:
+-------------------------------
+> tsc test.ts
+[Note : automatically equalent javascript file will be created in local path]
+
+
+variables in TypeScript:
+------------------------
+    - in TypeScript we can define the variable with data type.
+
+Ex_1:
+    public sub_one:string = "Angular5";
+    sub_two:string = "NodeJS";
+    sub_three:string = "MongoDB";
+    document.write(sub_one+"<==>"+sub_two+"<==>"+sub_three);
+
+
+
+Ex_2:
+    var var_one:string = "Angular5";
+    var var_two:number= 100;
+    var var_three:boolean=true;
+    var var_four:any = "Data From DataBase Soon...!";
+    var var_five:any[] = ["AngularJS","Angular5","NodeJS","MongoDB"];
+    var var_six:number[] = [10,20,30,40,50];
+
+    document.write("<h1>"+var_one+"</h1><br>");
+    document.write("<h1>"+var_two+"</h1><br>");
+    document.write("<h1>"+var_three+"</h1><br>");
+    document.write("<h1>"+var_four+"</h1><br>");
+    document.write("<h1>"+var_five+"</h1><br>");
+    document.write("<h1>"+var_six+"</h1><br>");
+
+> tsc variables.ts
+[Note : automatically equalent javascript file will be created]
+
+index.html
+----------
+<script src="variables.js"></script>
+
+-----------------------
+AJS_Classes
+    variables
+        variables.ts
+            variables.js (transpilation file)
+        index.html
+-----------------------
+
+
+
+
+
+
+
