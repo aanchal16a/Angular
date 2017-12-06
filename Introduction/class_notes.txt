@@ -88,6 +88,111 @@ index.html
 </html>
 
 
+2. As a angular Developer we can work on HTML DOM
+    DOM Stands for Document Object Model.
+Ex.
+    copy the data from "one div" to "another div" by using html & javascript.
+index.html
+----------
+<!DOCTYPE html>
+<html>
+    <div id="first_div">Hello</div>
+    <div id="second_div"></div>
+    <script>
+        document.getElementById("second_div").innerHTML =
+        document.getElementById("first_div").value;
+    </script>
+</html>
+[Note : as a html developer we must dependent on javascript to work with html DOM]
+
+Ex.
+    copy the data from "one div" to "another div" angular js.
+
+index.html
+----------
+<!DOCTYPE html>
+<html ng-app>
+    <div ng-model="first_div">Hello</div>
+    <div ng-bind="first_div"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+</html>
+
+1. angular framework (angular.min.js) file starts the execution from "ng-app" directive
+2. "ng-model" directive creates the object internally (heap memory) with
+    application data.
+3. "ng-bind" directive binds the application data(model data) to view.
+
+[Note : as a angular developer we can manipulate the DOM without depending
+        on javascript]
+
+3. AngularJS Supports Two Way Data Binding.
+-------------------------------------------
+    Automatic Data Synchronization between model and view with the super vision
+of controller called as Two Way Data Binding.
+
+
+
+in the above diagram we have following service calls:
+-----------------------------------------------------
+1. http get request
+    - this request used to fetch the data from database.
+
+
+2. http delete request
+    - this request used to delete the particular record from database.
+
+
+3. AJAX Call
+    - this request used to overcome the data inconsistency.
+
+[Note : as a programming language developer we must make above all server calls
+        to meet application requirement
+        Ex.
+            Java
+            dot net
+            php
+            --
+            --
+            --]
+[Note : as a angular developer we can make only two server calls to meet application
+        requirement
+        Ex.
+            AngularJS
+            Angular5
+]
+[Note : because of "two way data binding" we can reduce the burden on server]
+
+
+
+4. Open Source Code
+-------------------
+    - We Can Customize the framework accroding to application requirement.
+    - because of open source code sharability of angular framework will be increased.
+
+
+disadvanatges of angularjs:
+---------------------------
+1. Secuirity
+    - we are implementing the business components at client side automatically
+we are missing the secuirity by using angular framework.
+
+2. understanding the angular applications are difficult because lack of coding
+   standards.
+
+
+3. client should enable the javascript then only angular applications will execute.
+
+
+key features of angularjs:
+--------------------------
+
+
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,12 @@
+var var_one = "Angular5";
+var var_two = 100;
+var var_three = true;
+var var_four = "Data From DataBase Soon...!";
+var var_five = ["AngularJS", "Angular5", "NodeJS", "MongoDB"];
+var var_six = [10, 20, 30, 40, 50];
+document.write("<h1>" + var_one + "</h1><br>");
+document.write("<h1>" + var_two + "</h1><br>");
+document.write("<h1>" + var_three + "</h1><br>");
+document.write("<h1>" + var_four + "</h1><br>");
+document.write("<h1>" + var_five + "</h1><br>");
+document.write("<h1>" + var_six + "</h1><br>");
