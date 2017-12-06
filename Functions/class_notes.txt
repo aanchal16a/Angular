@@ -1,0 +1,144 @@
+Function:
+---------
+    set of business logic called as function.
+    by using functions we can reuse the business logic.
+
+javascript functions:
+---------------------
+    - we can create the (declare) functions by using
+      "function" keyword.
+
+    - we have two types of functions.
+
+            1. Named JavaScript Functions
+            2. Anonymous JavaScript Functions
+
+Named JavaScript Functions
+--------------------------
+    - the function with the name called as
+      Named JavaScript Function.
+
+Syntax.
+
+    //function declaration
+    function function_name(){
+        //business logic
+    }
+
+    //call the function
+    function_name()
+
+Ex_1:
+    function fun_one(){
+        return "Welcome to Angular5...!";
+    }
+
+    fun_one;  // function defination
+    fun_one(); // function output
+
+
+
+
+
+Ex_2:
+    function fun_one(){
+        return fun_two;
+    }
+    function fun_two(){
+        return "Welcome to Angular5 !";
+    }
+    fun_one()(); //Welcome to Angular5 !
+
+
+
+Ex_3:
+    function fun_one(arg1,arg2,arg3){
+        console.log ( arg1()+"<==>"+arg2()+"<==>"+arg3 );
+    }
+    function fun_two(){
+        return "Angular5";
+    }
+    function fun_three(){
+        return "NodeJS";
+    }
+    function fun_four(){
+        return "MongoDB";
+    }
+    fun_one(fun_two,fun_three,fun_four());
+
+Anonymous Functions:
+--------------------
+    - the function without name called as Anonymous function.
+    - Anonymous functions are more secured compared to Named Functions
+    - Anonymous functions utilizes the heap memory efficiently.
+
+
+Syntax.
+    //function declaration
+    var fun_one = function(){
+        //Business Logic
+    }
+
+    //call the function
+    fun_one();
+
+
+Ex_1:
+    var fun_one = function(){
+        return "Welcome to Anonymous Functions !";
+    }
+    fun_one;     // Anonymous function defination
+    fun_one();   // Anonymous function output
+
+
+Ex_2:
+    var fun_one = function(){
+        return function(){
+            return "Welcome to Closures !";
+        }
+    }
+    fun_one()();  //Welcome to Closures !
+
+
+Ex_3:
+    var fun_one = function(arg1,arg2,arg3){
+        console.log (arg1()+"<==>"+arg2()+"<==>"+arg3());
+    }
+
+    fun_one( function(){ return "Angular5";},
+             function(){ return "NodeJS";},
+             function(){ return "MemSQL !";}
+           );
+
+
+
+Ex_4:
+    array=[];
+    for(var i=0;i<10;i++){
+        //array.push(i);
+        array.unshift(i);
+    }
+    for(var i=0;i<array.lenght;i++){
+        console.log(array[i]);
+    }
+
+Ex_5:
+    array = [];
+    for(let i=0;i<5;i++){
+           array.push( function(){ return i;} );
+    }
+    console.log(array.length); //5
+    for(var i=0;i<array.length;i++){
+        console.log( array[i]() );
+    }
+
+
+TypeScript Functions:
+---------------------
+
+
+
+
+
+
+

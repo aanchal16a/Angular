@@ -13,20 +13,16 @@ document.write("<h1>"+var_four+"</h1><br>");
 document.write("<h1>"+var_five+"</h1><br>");
 document.write("<h1>"+var_six+"</h1><br>");
 */
-
-let var_one:string = "Angular5";
-let var_two:string = 'Angular4';
-let var_three:string = `Welcome to...
-                        ${var_one}`;
-document.write("<h1>"+var_one+"..."+var_two+"..."
-                +var_three+"</h1>");
-
-
-let num_one:number = 100;
-let num_two:number = 0x100;
-let num_three:number=0b1010;
-let num_four:number = 0561;
-document.write(num_one+"..."
-                        +num_two+"..."
-                        +num_three+"..."
-                        +num_four);
+var var_one = "Angular5";
+var var_two = 'Angular4';
+var var_three = "Welcome to...\n                        " + var_one;
+document.write("<h1>" + var_one + "..." + var_two + "..."
+    + var_three + "</h1>");
+var num_one = 100;
+var num_two = 0x100;
+var num_three = 10;
+var num_four = 0561;
+document.write(num_one + "..."
+    + num_two + "..."
+    + num_three + "..."
+    + num_four);
