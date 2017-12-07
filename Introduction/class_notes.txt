@@ -185,6 +185,58 @@ we are missing the secuirity by using angular framework.
 
 key features of angularjs:
 --------------------------
+1. directives
+    - directives in angular enhances the HTML Capabilities.
+
+    - we have two types of directives.
+        1. predefined directives
+
+        2. custom directives
+
+predefined directives
+---------------------
+    - the directives given by angular framework called as predefined directives
+
+Ex.
+    ng-app
+    ng-model
+    ng-bind
+
+custom directives:
+------------------
+    the directives developed by developer based on application requirement called as
+custom directive.
+
+Ex.
+    my-dir
+
+2. single page applications.
+    - loading one template to another template without refreshing the whole web page
+called as single page application.
+
+    - loading one template to another template in single page application called as
+routing.
+
+    - we can implement the routing by using following modules
+
+        1. ngRoute
+        2. ui.router
+
+    - ngRoute module is the "native module" and "deprecated module".
+
+    - "ui.router" module is the 3rd party module and have more advantages compared
+      to ngRoute Module
+
+    - now a days all most all the projects they are using "ui.router" module
+      to implement the routing in single page application.
+
+
+3. services
+    - we can develop the services by using angular.
+
+
+
+
 
 
 
